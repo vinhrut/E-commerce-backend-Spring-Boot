@@ -1,0 +1,59 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: my_id
+            client-secret: my_secret
+            scope:
+              - email
+              - profile
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+    org.springframework.web: DEBUG
+
+minio:
+  url: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: ecommerce
+
+jwt:
+  signerKey: MySecretJwtSignerKeyThatIsVerySecure123!
+
+vnpay:
+  tmn-code: "My_code"
+  secret-key: "My_key"
+  pay-url: "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
+  return-url: "http://localhost:8080/api/payment/vnpay-return"
+  ipn-url: "http://localhost:8080/api/payment/vnpay-ipn"
+  api-url: "https://sandbox.vnpayment.vn/merchant_webapi/api/transaction"
