@@ -49,15 +49,8 @@ MapStruct
 Lombok
 
 # Project Structure
-src
-├── config         -> Configuration classes (security, CORS, etc.)
-├── controller     -> REST API controllers
-├── dto            -> Data Transfer Objects
-├── entity         -> JPA entity classes
-├── mapper         -> MapStruct mappers
-├── repository     -> Spring Data repositories
-├── security       -> JWT and authentication logic
-├── service        -> Business service layer
+![image](https://github.com/user-attachments/assets/79858a43-3c13-4f47-b6a9-eafd510f564d)
+
 
 # Contact
 Author: Xuan Vinh
