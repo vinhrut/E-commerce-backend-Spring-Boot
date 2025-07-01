@@ -2,22 +2,20 @@
 This is the backend service for an e-commerce web application developed using Spring Boot. It provides RESTful APIs to manage authentication, products, shopping cart, orders, users, invoices, and supports payment integration with VNPAY. The project is designed with a clean architecture and includes essential features to run a real-world e-commerce platform.
 
 # Features
-Authentication and Authorization
-Traditional login using JWT
-Google login via OAuth2
-Role-based access control (Admin, Staff, User)
+![image](https://github.com/user-attachments/assets/87870898-945e-4a00-b9c7-9c8fa63b8332)
+
 
 # Product Management
-CRUD operations for products, categories, and images
-Search, filter, and pagination features
+![image](https://github.com/user-attachments/assets/f35a58e4-3ef1-4dc4-8238-ed62da7d2afa)
+
 
 # Shopping Cart
-Add, remove, update cart items
-Automatically create cart per user
+![image](https://github.com/user-attachments/assets/2aeeb2e6-c91b-4ed8-9d30-24b4a382544c)
+
 
 # Order Management
-Create and manage orders
-Update order, payment, and shipping status
+![image](https://github.com/user-attachments/assets/2cf7ec8d-e954-462e-8f55-7650a521715e)
+
 
 # Generate invoices as PDF files
 
@@ -28,25 +26,16 @@ Integration with VNPAY (generate payment URL, handle return and IPN notification
 Upload and manage images using MinIO (S3-compatible storage)
 
 # Security
-JWT-based authentication
-Spring Security for role and route protection
+![image](https://github.com/user-attachments/assets/5fc12590-7ba6-4470-b4df-a9a25cf3392b)
+
 
 # Docker Support
-Dockerfile for containerization
-Works well with PostgreSQL and MinIO via Docker or external services
+![image](https://github.com/user-attachments/assets/a717d798-6c15-40a1-b243-36abdc6a6706)
+
 
 # Technologies Used
-Java 17
-Spring Boot
-Spring Security
-JWT (JSON Web Token)
-Spring Data JPA (Hibernate)
-PostgreSQL
-MinIO (object storage)
-VNPAY Payment Gateway
-Docker
-MapStruct
-Lombok
+![image](https://github.com/user-attachments/assets/777bded0-0a07-4bce-807d-ff595d16c5a5)
+
 
 # Project Structure
 ![image](https://github.com/user-attachments/assets/79858a43-3c13-4f47-b6a9-eafd510f564d)
